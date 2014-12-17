@@ -11,8 +11,8 @@ Variables 1-2 are:
 
 Ranging over all data for the indicated SubjectID and ActivityName from the first two variables, the variables 3-68 provide the MEAN of the _features_ indicated in the variable names. The variable names each have one of the following two formats: 
 
- 1. "&lt; name\>.&lt;summary tool>.."
- 2. "&lt;name>.&lt;summary tool>...&lt;axis>"
+ 1. "&lt; name\>-&lt;summary tool>"
+ 2. "&lt;name>-&lt;summary tool>-&lt;axis>"
 
 The _feature_ indicated by the first format is computed using the summary tool indicated by &lt;summary tool> over the variable indicated by &lt;name>. The _feature_ indicated by the second format is computed using the summary tool indicated by &lt;summary tool> over the variable indicated by &lt;name> measured in the direction indicated by &lt;axis>. In both cases, it is not necessary to specify units because the features have been normalized so that they are bounded within [-1, 1]. 
 
@@ -40,7 +40,7 @@ The possible values of &lt;name>, &lt;summary tool>, and &lt;axis> are:
  * fBodyGyroMag
  * fBodyGyroJerkMag
 
-* &lt;summary tool> is either "mean" to indicated mean or "std" to indicate standard deviation. 
+* &lt;summary tool> is either "mean()" to indicated mean or "std()" to indicate standard deviation. 
  
 * &lt;axis> is either "X", "Y", or "Z" to indicate the x-direction, y-direction, or z-direction. 
  

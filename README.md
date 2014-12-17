@@ -16,7 +16,7 @@ The following modifications are made:
 
   *  `total` is subsetted so that it only includes variables corresponding to mean and standard deviation. 
   *  Each of the three data frames is given meaningful variable names, with the variable names for `total` extracted by subsetting the second column in the data from "features.txt". 
-  *  The unique column in `activity`  is coerced to be a factor and then its levels are replaced with meaning activity names using the key provided in "activity_labels.txt". 
+  *  The unique column in `activity`  is coerced to be a factor and then its levels are replaced with meaningful activity names using the key provided in "activity_labels.txt". 
   
 
 These three data frames are then merged using `cbind()` to create the data frame `TidyData`. 
